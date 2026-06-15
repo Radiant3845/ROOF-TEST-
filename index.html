@@ -3,32 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Star Pressure &amp; Roof Washing | 24/7 Professional Service</title>
+    <title>All Star Pressure &amp; Roof Washing | 24/7 Columbus, OH</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap');
-        
-        :root {
-            --primary: 37 99 235;
-        }
         
         body {
             font-family: 'Poppins', sans-serif;
         }
         
         .hero {
-            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)),
+            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
                         url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
         }
         
         .nav-link {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.3s ease;
         }
         
         .nav-link:hover {
-            color: rgb(37 99 235);
-            transform: translateY(-3px);
+            color: #2563eb;
+            transform: translateY(-2px);
         }
         
         .section-title {
@@ -39,10 +35,10 @@
         .section-title:after {
             content: '';
             position: absolute;
-            width: 72px;
+            width: 80px;
             height: 4px;
-            background: linear-gradient(to right, rgb(37 99 235), rgb(99 102 241));
-            bottom: -10px;
+            background: linear-gradient(to right, #2563eb, #3b82f6);
+            bottom: -12px;
             left: 50%;
             transform: translateX(-50%);
             border-radius: 9999px;
@@ -53,501 +49,207 @@
         }
         
         .service-card:hover {
-            transform: translateY(-15px) scale(1.02);
-            box-shadow: 0 30px 60px -15px rgb(37 99 235 / 0.3);
-        }
-        
-        .glass {
-            background: rgba(255, 255, 255, 0.96);
-            backdrop-filter: blur(16px);
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px -12px rgb(37 99 235 / 0.25);
         }
         
         .stat-number {
-            transition: all 1.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+            transition: all 2s ease-out;
+        }
+        
+        .glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
         }
         
         @keyframes countUp {
-            0% { transform: scale(0.6); }
-            100% { transform: scale(1); }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
     <!-- NAVBAR -->
-    <nav class="bg-white/95 backdrop-blur-lg shadow-2xl sticky top-0 z-50 border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
-            <div class="flex items-center gap-4">
-                <div class="w-16 h-16 bg-gradient-to-br from-blue-600 via-indigo-600 to-cyan-600 rounded-3xl flex items-center justify-center text-white text-5xl shadow-inner shadow-blue-500/30">
+    <nav class="bg-white shadow-xl sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center text-white text-3xl">
                     <i class="fa-solid fa-spray-can"></i>
                 </div>
-                <div>
-                    <h1 class="text-5xl font-bold tracking-[-2px] text-gray-900">All Star</h1>
-                    <p class="text-xs font-semibold tracking-[3px] text-blue-600 -mt-1">PRESSURE &amp; ROOF WASHING</p>
-                </div>
+                <h1 class="text-3xl font-bold tracking-tight text-blue-600">All Star Pressure</h1>
             </div>
             
-            <div class="hidden lg:flex items-center gap-10 text-sm font-medium">
-                <a href="#services" class="nav-link text-gray-700">Services</a>
-                <a href="#why-us" class="nav-link text-gray-700">Why Us</a>
-                <a href="#process" class="nav-link text-gray-700">Our Process</a>
-                <a href="#testimonials" class="nav-link text-gray-700">Testimonials</a>
-                <a href="#about" class="nav-link text-gray-700">About</a>
-                <a href="#contact" class="nav-link text-gray-700">Contact</a>
+            <div class="hidden md:flex items-center gap-10 text-sm font-medium">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
             
-            <div class="flex items-center gap-5">
-                <a href="#contact"
-                   class="hidden md:flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-7 py-3.5 rounded-2xl font-semibold text-sm transition-all shadow">
-                    <i class="fa-solid fa-phone"></i>
-                    614 780 69824
-                </a>
-                <a href="#contact"
-                   class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl font-semibold text-sm transition-all flex items-center gap-2">
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-2xl font-semibold hover:bg-blue-700 transition">
                     Get Free Quote
                 </a>
-                <button onclick="toggleMobileMenu()" class="lg:hidden text-3xl text-gray-700">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
-        </div>
-        
-        <!-- Mobile Menu -->
-        <div id="mobileMenu" class="hidden lg:hidden bg-white border-t shadow-2xl">
-            <div class="flex flex-col px-6 py-8 gap-6 text-xl font-medium">
-                <a href="#services" onclick="toggleMobileMenu()" class="nav-link">Services</a>
-                <a href="#why-us" onclick="toggleMobileMenu()" class="nav-link">Why Us</a>
-                <a href="#process" onclick="toggleMobileMenu()" class="nav-link">Our Process</a>
-                <a href="#testimonials" onclick="toggleMobileMenu()" class="nav-link">Testimonials</a>
-                <a href="#about" onclick="toggleMobileMenu()" class="nav-link">About</a>
-                <a href="#contact" onclick="toggleMobileMenu()" class="nav-link">Contact</a>
-                <a href="tel:61478069824" onclick="toggleMobileMenu()" class="flex items-center gap-3 text-blue-600">
-                    <i class="fa-solid fa-phone text-3xl"></i>
-                    614 780 69824
+                <a href="tel:61478069824" class="flex items-center gap-2 text-gray-700 hover:text-blue-600">
+                    <i class="fa-solid fa-phone text-xl"></i>
+                    <span class="font-medium">614 780 69824</span>
                 </a>
             </div>
         </div>
     </nav>
 
     <!-- HERO -->
-    <header class="hero min-h-screen flex items-center relative">
-        <div class="max-w-7xl mx-auto px-6 text-center z-10">
-            <div class="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md px-8 py-4 rounded-3xl text-sm font-medium mb-10 border border-white/30">
-                <div class="w-3 h-3 bg-emerald-400 rounded-full animate-pulse"></div>
-                OPEN 24/7 • SERVING COLUMBUS &amp; ALL OF CENTRAL OHIO
+    <header class="hero text-white py-24">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-3 bg-white/20 px-6 py-3 rounded-full text-sm mb-8">
+                <div class="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                OPEN 24/7 • SERVING ALL AREAS
             </div>
             
-            <h2 class="text-6xl md:text-7xl lg:text-8xl font-bold leading-none tracking-tighter mb-6">
+            <h2 class="text-6xl md:text-7xl font-bold leading-tight mb-6">
                 Professional<br>Pressure Washing<br>&amp; Roof Cleaning
             </h2>
             
-            <p class="text-2xl md:text-3xl text-white/90 max-w-3xl mx-auto mb-14">
-                Gutter cleaning • Roof washing • House washing • 24-hour emergency service
+            <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-10">
+                Gutter cleaning • Roof washing • 24-hour service • 5-star Google reviews
             </p>
             
             <div class="flex flex-col sm:flex-row gap-6 justify-center">
-                <a href="#contact"
-                   class="bg-white hover:bg-gray-100 text-blue-700 px-14 py-7 rounded-3xl text-2xl font-bold transition-all shadow-2xl flex items-center justify-center gap-3">
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-12 py-5 rounded-3xl text-xl font-bold transition">
                     GET FREE QUOTE
                 </a>
-                <a href="tel:61478069824"
-                   class="bg-white/10 hover:bg-white/20 border border-white/40 text-white px-14 py-7 rounded-3xl text-2xl font-bold transition-all flex items-center justify-center gap-3">
-                    <i class="fa-solid fa-phone text-4xl"></i>
+                <a href="tel:61478069824" class="bg-white text-blue-700 hover:bg-gray-100 px-12 py-5 rounded-3xl text-xl font-bold flex items-center justify-center gap-3 transition">
+                    <i class="fa-solid fa-phone"></i>
                     CALL NOW 614 780 69824
                 </a>
             </div>
-
-            <div class="mt-16 flex flex-wrap justify-center gap-x-16 gap-y-8 text-sm">
-                <div class="flex items-center gap-4">
-                    <span class="text-6xl">★★★★★</span>
-                    <div class="text-left">
-                        <div class="font-bold text-3xl">5.0</div>
-                        <div class="text-white/80">Google Reviews</div>
+            
+            <div class="mt-12 flex justify-center items-center gap-8 text-sm">
+                <div class="flex items-center gap-2">
+                    <span class="text-4xl">★★★★★</span>
+                    <div>
+                        <div class="font-bold">5.0</div>
+                        <div class="text-white/70">Google Maps</div>
                     </div>
                 </div>
-                <div class="h-10 w-px bg-white/30"></div>
-                <div class="flex items-center gap-4">
-                    <i class="fa-solid fa-shield-halved text-5xl"></i>
-                    <div class="text-left">
+                <div class="h-8 w-px bg-white/30"></div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-shield-halved text-3xl"></i>
+                    <div>
                         <div class="font-bold">Fully Insured</div>
-                        <div class="text-white/80">$1M Liability</div>
-                    </div>
-                </div>
-                <div class="h-10 w-px bg-white/30"></div>
-                <div class="flex items-center gap-4">
-                    <i class="fa-solid fa-leaf text-5xl"></i>
-                    <div class="text-left">
-                        <div class="font-bold">Eco-Friendly</div>
-                        <div class="text-white/80">Safe for roofs &amp; environment</div>
+                        <div class="text-white/70">24/7 Service</div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Scroll prompt -->
-        <div class="absolute bottom-12 left-1/2 flex flex-col items-center text-white/70 text-xs tracking-[2px]">
-            <div>SCROLL TO EXPLORE</div>
-            <i class="fa-solid fa-chevron-down mt-2 animate-bounce text-xl"></i>
         </div>
     </header>
 
     <!-- SERVICES -->
-    <section id="services" class="py-24 bg-white">
+    <section id="services" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="section-title text-6xl font-bold tracking-tight">Our Expert Services</h2>
-                <p class="mt-5 text-xl text-gray-600 max-w-lg mx-auto">Premium cleaning solutions that last up to 18 months with zero damage to your surfaces.</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="service-card bg-white border border-gray-100 rounded-3xl overflow-hidden">
-                    <div class="h-64 bg-gradient-to-br from-blue-50 to-white flex items-center justify-center">
-                        <i class="fa-solid fa-water text-9xl text-blue-600/10"></i>
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-3xl font-semibold mb-3">Roof Cleaning</h3>
-                        <p class="text-gray-600 leading-relaxed">Advanced soft-wash technology safely removes mold, algae, mildew, and debris. Protects your roof for 12–18 months while preventing costly repairs.</p>
-                        <div class="mt-8 flex justify-between text-sm font-medium">
-                            <span class="text-blue-600">12–18 Months Protection</span>
-                            <span class="text-emerald-600">Best Seller</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="service-card bg-white border border-gray-100 rounded-3xl overflow-hidden">
-                    <div class="h-64 bg-gradient-to-br from-amber-50 to-white flex items-center justify-center">
-                        <i class="fa-solid fa-shower text-9xl text-amber-600/10"></i>
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-3xl font-semibold mb-3">Gutter Cleaning</h3>
-                        <p class="text-gray-600 leading-relaxed">Professional gutter &amp; downspout cleaning. We remove leaves, debris, and ice-dam risks. Free for up to 3 downspouts on residential homes.</p>
-                        <div class="mt-8 flex justify-between text-sm font-medium">
-                            <span class="text-blue-600">30-Minute Service</span>
-                            <span class="text-emerald-600">Prevents Foundation Damage</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="service-card bg-white border border-gray-100 rounded-3xl overflow-hidden">
-                    <div class="h-64 bg-gradient-to-br from-emerald-50 to-white flex items-center justify-center">
-                        <i class="fa-solid fa-spray-can text-9xl text-emerald-600/10"></i>
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-3xl font-semibold mb-3">House Washing</h3>
-                        <p class="text-gray-600 leading-relaxed">Complete exterior cleaning in one visit — siding, windows, driveway, sidewalk, and fence. Transforms your home instantly.</p>
-                        <div class="mt-8 flex justify-between text-sm font-medium">
-                            <span class="text-blue-600">Same-Day Service</span>
-                            <span class="text-emerald-600">Whole-Home Special</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- WHY US -->
-    <section id="why-us" class="py-24 bg-gradient-to-b from-gray-50 to-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-12 gap-16 items-center">
-                <div class="lg:col-span-5">
-                    <h2 class="section-title text-6xl font-bold tracking-tight">Why Thousands Choose All Star</h2>
-                    <p class="mt-8 text-xl text-gray-600 max-w-md">Local family business with 8+ years of experience. We deliver results that last and service you deserve.</p>
-                    
-                    <div class="mt-14 space-y-10">
-                        <div class="flex gap-6">
-                            <div class="flex-shrink-0 w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-4xl">⚡</div>
-                            <div>
-                                <div class="font-semibold text-2xl">Lightning Fast</div>
-                                <div class="text-gray-600">Most homes cleaned same-day or next-day</div>
-                            </div>
-                        </div>
-                        <div class="flex gap-6">
-                            <div class="flex-shrink-0 w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-4xl">🔒</div>
-                            <div>
-                                <div class="font-semibold text-2xl">Fully Insured</div>
-                                <div class="text-gray-600">$1,000,000 Liability Insurance</div>
-                            </div>
-                        </div>
-                        <div class="flex gap-6">
-                            <div class="flex-shrink-0 w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-4xl">🌿</div>
-                            <div>
-                                <div class="font-semibold text-2xl">Eco-Friendly</div>
-                                <div class="text-gray-600">EPA-approved, safe for kids &amp; pets</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Stats -->
-                <div class="lg:col-span-7 bg-white rounded-3xl p-12 shadow-2xl">
-                    <div class="grid grid-cols-3 gap-10 text-center">
-                        <div>
-                            <div class="stat-number text-6xl font-bold text-blue-600">3,200</div>
-                            <div class="mt-3 text-gray-500 font-medium">Homes Cleaned</div>
-                        </div>
-                        <div>
-                            <div class="stat-number text-6xl font-bold text-blue-600">5.0</div>
-                            <div class="mt-3 text-gray-500 font-medium">Google Rating</div>
-                        </div>
-                        <div>
-                            <div class="stat-number text-6xl font-bold text-blue-600">18</div>
-                            <div class="mt-3 text-gray-500 font-medium">Months Protection</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section id="process" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="section-title text-6xl font-bold tracking-tight text-center mb-16">Our Proven 4-Step Process</h2>
-            
-            <div class="grid md:grid-cols-4 gap-8">
-                <div class="text-center">
-                    <div class="mx-auto w-20 h-20 bg-blue-100 text-blue-600 rounded-3xl flex items-center justify-center text-6xl mb-6">1</div>
-                    <h3 class="font-semibold text-2xl mb-4">Book Your Free Quote</h3>
-                    <p class="text-gray-600">Tell us what you need and we’ll schedule a convenient time within 24 hours.</p>
-                </div>
-                <div class="text-center">
-                    <div class="mx-auto w-20 h-20 bg-blue-100 text-blue-600 rounded-3xl flex items-center justify-center text-6xl mb-6">2</div>
-                    <h3 class="font-semibold text-2xl mb-4">Professional Cleaning Day</h3>
-                    <p class="text-gray-600">We arrive on time, use premium equipment, and protect your home every step of the way.</p>
-                </div>
-                <div class="text-center">
-                    <div class="mx-auto w-20 h-20 bg-blue-100 text-blue-600 rounded-3xl flex items-center justify-center text-6xl mb-6">3</div>
-                    <h3 class="font-semibold text-2xl mb-4">Complete the Job</h3>
-                    <p class="text-gray-600">We clean thoroughly and leave your property spotless and protected.</p>
-                </div>
-                <div class="text-center">
-                    <div class="mx-auto w-20 h-20 bg-blue-100 text-blue-600 rounded-3xl flex items-center justify-center text-6xl mb-6">4</div>
-                    <h3 class="font-semibold text-2xl mb-4">Enjoy Your Results</h3>
-                    <p class="text-gray-600">Your home looks refreshed. We’re here for any follow-up questions.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section id="testimonials" class="py-24 bg-gradient-to-b from-white to-gray-50">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="section-title text-6xl font-bold tracking-tight text-center mb-16">Real Results, Real People</h2>
-            
+            <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-10 rounded-3xl shadow-xl">
-                    <div class="flex gap-1 text-3xl text-amber-400 mb-6">★★★★★</div>
-                    <p class="text-lg leading-relaxed italic">"All Star arrived on time and cleaned my roof and gutters in one visit. My house looks brand new and I’ve already saved on repairs. Highly recommend!"</p>
-                    <div class="mt-10 flex items-center gap-4">
-                        <div class="w-12 h-12 bg-gray-200 rounded-2xl"></div>
-                        <div>
-                            <div class="font-semibold">Sarah M.</div>
-                            <div class="text-sm text-gray-500">Dublin, OH • May 2025</div>
-                        </div>
-                    </div>
+                <div class="bg-gray-50 p-8 rounded-3xl text-center hover:shadow-xl transition">
+                    <i class="fa-solid fa-water text-5xl text-blue-600 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Roof Cleaning</h3>
+                    <p class="text-gray-600">Safe soft washing. Removes mold, algae &amp; mildew. Lasts 12–18 months.</p>
                 </div>
-                
-                <div class="bg-white p-10 rounded-3xl shadow-xl">
-                    <div class="flex gap-1 text-3xl text-amber-400 mb-6">★★★★★</div>
-                    <p class="text-lg leading-relaxed italic">"The gutter cleaning saved my foundation from ice damage. Professional, fast, and eco-friendly. Best service in Columbus!"</p>
-                    <div class="mt-10 flex items-center gap-4">
-                        <div class="w-12 h-12 bg-gray-200 rounded-2xl"></div>
-                        <div>
-                            <div class="font-semibold">James T.</div>
-                            <div class="text-sm text-gray-500">Galloway, OH • June 2025</div>
-                        </div>
-                    </div>
+                <div class="bg-gray-50 p-8 rounded-3xl text-center hover:shadow-xl transition">
+                    <i class="fa-solid fa-shower text-5xl text-blue-600 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Gutter Cleaning</h3>
+                    <p class="text-gray-600">Clogs cause damage. We clear them fast. Free up to 3 downspouts per home.</p>
                 </div>
-                
-                <div class="bg-white p-10 rounded-3xl shadow-xl">
-                    <div class="flex gap-1 text-3xl text-amber-400 mb-6">★★★★★</div>
-                    <p class="text-lg leading-relaxed italic">"Whole house washing — driveway, siding, windows. Looks amazing! They even cleaned up after themselves. Will definitely use again."</p>
-                    <div class="mt-10 flex items-center gap-4">
-                        <div class="w-12 h-12 bg-gray-200 rounded-2xl"></div>
-                        <div>
-                            <div class="font-semibold">Amanda R.</div>
-                            <div class="text-sm text-gray-500">Columbus, OH • April 2025</div>
-                        </div>
-                    </div>
+                <div class="bg-gray-50 p-8 rounded-3xl text-center hover:shadow-xl transition">
+                    <i class="fa-solid fa-spray-can text-5xl text-blue-600 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-3">House Washing</h3>
+                    <p class="text-gray-600">Pressure wash your whole house, driveway &amp; sidewalks in one visit.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="py-24 bg-blue-50">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-16 items-center">
-                <div class="rounded-3xl overflow-hidden shadow-2xl">
-                    <img src="https://picsum.photos/id/1015/800/600" alt="All Star Team" class="w-full h-full object-cover">
-                </div>
-                <div>
-                    <h2 class="section-title text-6xl font-bold tracking-tight">About All Star Pressure &amp; Roof Washing</h2>
-                    <div class="mt-10 space-y-8 text-lg leading-relaxed">
-                        <p class="text-gray-700">We are a proud, family-owned and operated business based in Columbus, Ohio. For over 8 years, we’ve been trusted by thousands of homeowners for our reliability, speed, and commitment to excellence.</p>
-                        <p class="text-gray-700">Our team is fully bonded and insured, uses only the highest-quality EPA-approved eco-friendly cleaners, and guarantees every job. We serve all of Central Ohio and surrounding areas with 24/7 emergency service available.</p>
-                        <div class="bg-white rounded-2xl p-8 mt-8">
-                            <div class="flex items-center gap-6">
-                                <div class="text-6xl">⭐</div>
-                                <div>
-                                    <div class="font-semibold text-2xl">5-Star Google Reviews</div>
-                                    <div class="text-gray-600">3,200+ customers &amp; counting</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section id="about" class="py-20 bg-blue-50">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8">Why All Star?</h2>
+            <p class="max-w-2xl mx-auto text-lg text-gray-600">
+                Local family business. 24/7 emergency service. 5-star Google reviews. Fully insured and using eco-friendly products.
+            </p>
+            <div class="mt-10 inline-flex items-center gap-2 bg-white shadow px-8 py-4 rounded-3xl text-xl">
+                <span class="text-3xl">★</span>
+                <span>5.0 on Google Maps</span>
             </div>
         </div>
     </section>
 
     <!-- CONTACT FORM -->
-    <section id="contact" class="py-24">
-        <div class="max-w-3xl mx-auto px-6">
-            <h2 class="section-title text-6xl font-bold tracking-tight text-center mb-4">Ready to Get Your Free Quote?</h2>
-            <p class="text-center text-lg text-gray-600 mb-12">Fill out the form and we’ll call you within minutes (business hours). After-hours emergency calls always welcome!</p>
+    <section id="contact" class="py-20">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Get In Touch — We Call You Fast</h2>
             
-            <form id="contactForm" class="bg-white rounded-3xl shadow-2xl p-12 space-y-9">
-                <div class="grid md:grid-cols-2 gap-8">
+            <form id="contactForm" class="bg-white rounded-3xl shadow-2xl p-10 space-y-8">
+                <div class="grid md:grid-cols-2 gap-6">
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-3">Full Name</label>
-                        <input type="text" id="name" required
-                               class="w-full border border-gray-300 focus:border-blue-600 rounded-2xl px-7 py-5 text-lg outline-none transition">
+                        <label class="block text-sm font-medium mb-2">Full Name</label>
+                        <input type="text" id="name" required class="w-full border border-gray-300 focus:border-blue-600 rounded-2xl px-6 py-4 outline-none">
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-3">Phone Number</label>
-                        <input type="tel" id="phone" required
-                               class="w-full border border-gray-300 focus:border-blue-600 rounded-2xl px-7 py-5 text-lg outline-none transition">
+                        <label class="block text-sm font-medium mb-2">Phone Number</label>
+                        <input type="tel" id="phone" required class="w-full border border-gray-300 focus:border-blue-600 rounded-2xl px-6 py-4 outline-none">
                     </div>
                 </div>
-                
+               
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-3">Email Address</label>
-                    <input type="email" id="email" required
-                           class="w-full border border-gray-300 focus:border-blue-600 rounded-2xl px-7 py-5 text-lg outline-none transition">
+                    <label class="block text-sm font-medium mb-2">Email Address</label>
+                    <input type="email" id="email" required class="w-full border border-gray-300 focus:border-blue-600 rounded-2xl px-6 py-4 outline-none">
                 </div>
-                
+               
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-3">What service do you need?</label>
-                    <select id="service" required
-                            class="w-full border border-gray-300 focus:border-blue-600 rounded-2xl px-7 py-5 text-lg outline-none transition">
-                        <option value="">Please select a service...</option>
-                        <option value="roof">Roof Cleaning</option>
-                        <option value="gutter">Gutter Cleaning</option>
-                        <option value="house">House Washing</option>
-                        <option value="emergency">Emergency Pressure Washing</option>
-                        <option value="other">Other</option>
-                    </select>
+                    <label class="block text-sm font-medium mb-2">Message / What You Need</label>
+                    <textarea id="message" rows="5" required class="w-full border border-gray-300 focus:border-blue-600 rounded-2xl px-6 py-4 outline-none"></textarea>
                 </div>
-                
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-3">Message / Special Requests</label>
-                    <textarea id="message" rows="6" required
-                              class="w-full border border-gray-300 focus:border-blue-600 rounded-2xl px-7 py-5 text-lg outline-none transition resize-none"></textarea>
-                </div>
-                
-                <button type="submit"
-                        class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white py-7 rounded-3xl text-2xl font-bold tracking-wide transition-all shadow-2xl">
-                    SEND MESSAGE — WE’LL CALL YOU SOON
+               
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 rounded-3xl text-xl font-bold transition">
+                    SEND MESSAGE — WE’LL CALL YOU
                 </button>
             </form>
             
-            <div id="formMessage" class="mt-8 text-center text-xl hidden"></div>
+            <div id="formMessage" class="mt-6 text-center text-sm hidden"></div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-gray-900 text-white pt-20 pb-12">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-12 gap-12">
-                <div class="md:col-span-5">
-                    <div class="flex items-center gap-4 mb-8">
-                        <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-white text-4xl">
-                            <i class="fa-solid fa-spray-can"></i>
-                        </div>
-                        <h3 class="text-4xl font-bold">All Star</h3>
-                    </div>
-                    <p class="text-gray-400 max-w-xs">Your trusted local experts in pressure washing and roof maintenance. Serving Columbus and all of Central Ohio since 2018.</p>
-                    <div class="mt-12 text-3xl flex gap-8">
-                        <i class="fa-brands fa-facebook hover:text-blue-400 cursor-pointer"></i>
-                        <i class="fa-brands fa-instagram hover:text-blue-400 cursor-pointer"></i>
-                    </div>
-                </div>
-                
-                <div class="md:col-span-2">
-                    <h4 class="font-semibold text-lg mb-6">Quick Links</h4>
-                    <div class="space-y-4 text-gray-400">
-                        <a href="#services" class="footer-link block">Services</a>
-                        <a href="#why-us" class="footer-link block">Why Us</a>
-                        <a href="#process" class="footer-link block">Our Process</a>
-                        <a href="#testimonials" class="footer-link block">Testimonials</a>
-                        <a href="#about" class="footer-link block">About</a>
-                    </div>
-                </div>
-                
-                <div class="md:col-span-2">
-                    <h4 class="font-semibold text-lg mb-6">Contact</h4>
-                    <div class="space-y-6 text-gray-400">
-                        <a href="tel:61478069824" class="footer-link flex items-center gap-3">
-                            <i class="fa-solid fa-phone"></i>
-                            614 780 69824
-                        </a>
-                        <div class="pt-4 border-t border-gray-700">
-                            <div class="font-medium">Business Hours</div>
-                            <div class="text-sm">24/7 Emergency Service</div>
-                            <div class="text-sm">Mon–Sun: 7 AM – 9 PM</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="md:col-span-3 text-right md:text-left">
-                    <div class="text-xs text-gray-500">© 2026 All Star Pressure &amp; Roof Washing<br>
-                    Built with ❤️ using Tailwind CSS &amp; Formspree</div>
-                </div>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="flex justify-center gap-8 text-3xl mb-8">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-solid fa-phone"></i>
             </div>
+           
+            <p class="text-lg font-medium">614 780 69824</p>
+            <p class="text-gray-400">Open 24/7 • All Star Pressure and Roof Washing</p>
+           
+            <p class="text-xs text-gray-500 mt-8">Website powered by GitHub Pages • Formspree.io</p>
         </div>
     </footer>
 
     <script>
-        // Tailwind already loaded
-        
-        function toggleMobileMenu() {
-            document.getElementById('mobileMenu').classList.toggle('hidden');
-        }
-        
-        // Animated counter
-        function animateCounters() {
-            const counters = document.querySelectorAll('.stat-number');
-            counters.forEach(counter => {
-                const target = parseFloat(counter.textContent);
-                let current = 0;
-                const increment = target / 60;
-                const timer = setInterval(() => {
-                    current += increment;
-                    if (current >= target) {
-                        counter.textContent = target;
-                        clearInterval(timer);
-                    } else {
-                        counter.textContent = Math.floor(current);
-                    }
-                }, 30);
-            });
-        }
-        
-        // Form handling
+        // Simple form handling (no errors)
         document.getElementById('contactForm').addEventListener('submit', async (e) => {
             e.preventDefault();
-            
+           
             const formData = {
                 name: document.getElementById('name').value,
                 phone: document.getElementById('phone').value,
                 email: document.getElementById('email').value,
-                service: document.getElementById('service').value,
                 message: document.getElementById('message').value
             };
             
             const btn = e.target.querySelector('button');
-            const originalHTML = btn.innerHTML;
-            btn.innerHTML = 'SENDING YOUR REQUEST...';
+            const originalText = btn.innerHTML;
+            btn.innerHTML = 'SENDING...';
             btn.disabled = true;
             
             try {
@@ -558,55 +260,22 @@
                 });
                 
                 if (response.ok) {
-                    document.getElementById('formMessage').innerHTML = '✅ Thank you! Our team will call you within minutes.';
+                    document.getElementById('formMessage').innerHTML = '✅ Message sent! We\'ll call you right away.';
                     document.getElementById('formMessage').classList.remove('hidden');
                     document.getElementById('formMessage').classList.add('text-green-600');
                     document.getElementById('contactForm').reset();
                 } else {
-                    throw new Error('Server error');
+                    throw new Error();
                 }
             } catch (error) {
                 document.getElementById('formMessage').innerHTML = '❌ Could not send message. Please call us directly.';
                 document.getElementById('formMessage').classList.remove('hidden');
                 document.getElementById('formMessage').classList.add('text-red-600');
             } finally {
-                btn.innerHTML = originalHTML;
+                btn.innerHTML = originalText;
                 btn.disabled = false;
             }
         });
-        
-        // Intersection Observer for counters
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounters();
-                    observer.disconnect();
-                }
-            });
-        }, { threshold: 0.6 });
-        
-        observer.observe(document.getElementById('why-us'));
-        
-        // Keyboard support
-        document.addEventListener('keydown', (e) => {
-            if (e.key === "Escape") {
-                const menu = document.getElementById('mobileMenu');
-                if (!menu.classList.contains('hidden')) toggleMobileMenu();
-            }
-        });
-        
-        // Smooth anchor scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                if (this.getAttribute('href') !== '#') {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-        
-        console.log('%c✅ Premium All Star website fully loaded with zero errors!', 'color:#2563eb; font-weight:700');
     </script>
 </body>
 </html>
